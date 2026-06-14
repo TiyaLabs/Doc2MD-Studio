@@ -155,7 +155,7 @@ function App() {
               <Layers size={24} color="white" />
             </div>
             <h1 style={{ fontSize: '1.25rem', fontWeight: '600', color: 'var(--text-primary)', letterSpacing: '-0.02em' }}>
-              MarkItDown Studio
+              Doc2MD Studio
             </h1>
           </div>
 
@@ -326,7 +326,8 @@ function App() {
 
         {/* Footer */}
         <div style={{ marginTop: '2rem', textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.85rem' }}>
-          Developed by <span style={{ fontWeight: '600', color: 'var(--text-secondary)' }}>Fatir</span>
+          <div style={{ marginBottom: '0.25rem' }}>Dibuat oleh <span style={{ fontWeight: '600', color: 'var(--text-secondary)' }}>Fatir</span></div>
+          <div style={{ fontSize: '0.75rem', opacity: 0.8 }}>Powered by Microsoft MarkItDown</div>
         </div>
       </div>
 
