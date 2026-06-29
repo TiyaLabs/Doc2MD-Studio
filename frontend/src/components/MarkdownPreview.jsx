@@ -99,14 +99,14 @@ export default function MarkdownPreview({ markdown, filename = 'converted.md' })
               code({node, inline, className, children, ...props}) {
                 const match = /language-(\w+)/.exec(className || '')
                 return !inline && match ? (
-                  <SyntaxHighlighter
-                    {...props}
-                    children={String(children).replace(/\n$/, '')}
-                    style={dracula}
-                    language={match[1]}
-                    PreTag="div"
-                    customStyle={{ background: 'var(--bg-tertiary)', borderRadius: '8px', padding: '1rem', border: '1px solid var(--border-color)' }}
-                  />
+                    <SyntaxHighlighter
+                      {...props}
+                      children={String(children).replace(/\n$/, '')}
+                      style={dracula}
+                      language={match[1]}
+                      PreTag="div"
+                      customStyle={{ borderRadius: '8px', padding: '1rem', border: '1px solid var(--border-color)' }}
+                    />
                 ) : (
                   <code {...props} className={className}>
                     {children}
